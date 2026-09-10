@@ -1,6 +1,6 @@
 # 🧘 Yoga Landing Page
 
-A responsive yoga studio landing page built from scratch using vanilla HTML, CSS, and JavaScript — no frameworks, no libraries. Built as a practice project to strengthen core web fundamentals.
+A responsive yoga studio landing page built from scratch using vanilla HTML, CSS, and JavaScript — no frameworks, no libraries. Built as a practice project to strengthen core web fundamentals......
 
 **🔗 Live Preview:** [landing-page-yoga.netlify.app](https://landing-page-yoga.netlify.app/)
 
