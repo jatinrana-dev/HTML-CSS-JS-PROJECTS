@@ -37,7 +37,7 @@ nav a{
 }
 .nav-part-2 a ul{
     display: flex;
-    gap: 2vw;
+    gap: 2.1vw;
     /* word-spacing: -10px; */
      
 }
