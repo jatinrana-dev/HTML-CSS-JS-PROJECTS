@@ -1,0 +1,122 @@
+@font-face {
+    font-family: samsung;
+    src: url(./font/SamsungSharpSansBd.woff2);
+    
+}
+@font-face {
+    font-family:Robot ;
+    src: url(./font/RobotoMono-Regular.ttf);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+nav{ 
+    position: fixed;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 11vw;
+}
+
+nav a{
+    text-decoration: none;
+}
+.nav-part-2 a{
+
+    text-decoration: none;
+}
+.nav-part-2 a ul{
+    display: flex;
+    gap: 2vw;
+    /* word-spacing: -10px; */
+     
+}
+.nav-part-2 a ul h4{
+    font-size: 1vw;
+    font-weight: 100;
+    /* font-family: Robot; */
+    width: fit-content;
+}
+nav:hover #nav-bottom{
+    height: 170%;
+    bottom: -170%;
+}
+nav  button{
+    background-color: #0BA34E;
+    padding: 0.6vw 1.5vw;
+    border-radius: 50px;
+    border: none;
+}
+
+#nav-bottom{
+    transition: all ease 0.5s;
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    border-bottom: 2px solid white;
+    height: 1%;
+    background-color: #111;
+
+}
+#section-1{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+}
+#section-1 h1{
+    font-size: 8vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 8vw;
+  font-family: samsung;
+}
+
+#section-1 h1 svg{
+    height: 6vw;
+    width: 6vw;
+    background-color: #0BA34E;
+    border-radius: 50%;
+}
+#section-1 p {
+    text-align: center;
+    padding-top:3vh;
+    word-spacing: 0.5vh;
+;}
+#section-1text{
+    padding-top: 0.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section-1text h4{
+    font-weight: 400;
+    font-size: 1vw;
+    text-transform: lowercase;
+    border: 1px solid rgb(192, 192, 192);
+    padding: 5px 10px;
+    border-radius: 50px ;
+}
+#section-1text h4:nth-last-child(2){
+
+    border: none;
+}
+
+#section-2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+}
