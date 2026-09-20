@@ -173,7 +173,7 @@ nav  button{
 }
 
 #section-2{
-    height: 119vh;
+    height: 84vh;
     width: 100%;
     background-color: #111;
     display: flex;
@@ -182,7 +182,6 @@ nav  button{
         padding-left: 11vw;
         align-items: center;
         justify-content: space-between;
-        padding-top: 7vw;
 
 }
 .section-2-left{
@@ -190,10 +189,10 @@ nav  button{
     height: 80vh;
     width: 40%;
 display: flex;
+
 flex-direction: column;
 align-items: flex-start;
 justify-content: space-between;
-padding: 3vw 0;
 
 
 }
@@ -214,8 +213,90 @@ padding: 3vw 0;
 
     
 .section-2-right{
-    background-color: #333;
+
     height: 80vh;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-2-right .right-elem{
+    /* background-color: #333; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+height: 15vh;
+border-bottom: 1px solid white;
+padding-top: 1vh;
+}
+.section-2-right .right-elem i{
+    font-size: 2.5vw;
+    padding-bottom: 2vw;
+}
+.section-2-right .right-elem h2{
+    font-family: apple;
+    text-transform: capitalize;
+}
+
+/* 
+.section-2-right .right-elem {
+  transition: 
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
+
+.section-2-right .right-elem:hover, .section-2-right .right-elem:focus-visible {
+  filter: brightness(1.1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .section-2-right .right-elem:hover, .section-2-right .right-elem:focus-visible {
+    transform: scale(1.08) translateY(-12px);
+  }
+} */
+
+@keyframes hover-pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+.section-2-right .right-elem h2 {
+  transition: filter 0.8s ease;
+}
+
+.section-2-right .right-elem h2 :hover, .element:focus-visible {
+  filter: brightness(1.1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .section-2-right .right-elem h2:hover, .section-2-right .right-elem h2:focus-visible {
+    animation: hover-pulse 0.8s ease infinite alternate;
+  }
+}
+
+@keyframes hover-shine {
+  from { transform: translateX(-120%) skewX(-20deg); }
+  to { transform: translateX(220%) skewX(-20deg); }
+}
+
+.section-2-right .right-elem h2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-2-right .right-elem h2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.6) 50%, transparent 70%);
+  transform: translateX(-120%) skewX(-20deg);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .section-2-right .right-elem h2:hover::before, .section-2-right .right-elem h2:focus-visible::before {
+    animation: hover-shine 1.1s ease 1;
+  }
 }
 
