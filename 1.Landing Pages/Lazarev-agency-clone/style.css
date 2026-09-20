@@ -26,6 +26,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 2vw 11vw;
+    z-index: 3;
 }
 
 nav a{
@@ -115,8 +116,40 @@ nav  button{
     border: none;
 }
 
+.moving-div{
+    /* padding-top: 10vh; */
+    position: absolute;
+    bottom: 0%;
+    white-space: nowrap;
+    width: 90%;
+    width: 65%;
+    padding: 0.3vw;
+    overflow: hidden;
+}
+.moving-div .move{
+    display: inline-block;
+    animation-name: moving-images;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+   
+}
+.moving-div .move img{
+    height: 6vw;
+    margin: 0 1vw;
+}
+@keyframes moving-images {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    
+}
+
 #section-2{
     height: 100vh;
     width: 100%;
     background-color: #111;
 }
+
