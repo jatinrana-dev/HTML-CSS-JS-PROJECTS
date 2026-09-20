@@ -7,6 +7,10 @@
     font-family:Robot ;
     src: url(./font/RobotoMono-Regular.ttf);
 }
+@font-face {
+    font-family: apple;
+    src: url(./font/sf-pro-text_light.woff2);
+}
 html,body{
     height: 100%;
     width: 100%;
@@ -94,8 +98,9 @@ nav  button{
 }
 #section-1 p {
     text-align: center;
-    padding-top:3vh;
+    padding-top:8vh;
     word-spacing: 0.5vh;
+
 ;}
 #section-1text{
     padding-top: 0.5vh;
@@ -117,27 +122,28 @@ nav  button{
 }
 
 .moving-div{
-    /* padding-top: 10vh; */
+    padding-top: 10vh;
     position: absolute;
     bottom: 0%;
     white-space: nowrap;
-    width: 90%;
-    width: 65%;
+    width: 70%;
     padding: 0.3vw;
+    
     overflow: hidden;
 }
 .moving-div .move{
     display: inline-block;
     animation-name: moving-images;
-    animation-duration: 5s;
+    animation-duration: 7s;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
    
 }
 .moving-div .move img{
     height: 6vw;
     margin: 0 1vw;
 }
-@keyframes moving-images {
+ @keyframes moving-images {
     0%{
         transform: translateX(0);
     }
@@ -145,11 +151,71 @@ nav  button{
         transform: translateX(-100%);
     }
     
+} 
+
+.blur-left{
+    height: 7vh;
+        background: linear-gradient(to left,transparent, #111);
+
+    width: 20%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+}
+.blur-right
+{
+    height: 7vh;
+    background: linear-gradient(to right,transparent, #111);
+    width: 15%;
+    position: absolute;
+    top: 20%;
+    right: 0;
 }
 
 #section-2{
-    height: 100vh;
+    height: 119vh;
     width: 100%;
     background-color: #111;
+    display: flex;
+    border-top: 1px solid #333;
+        padding-right: 9vw;
+        padding-left: 11vw;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 7vw;
+
+}
+.section-2-left{
+    background-color: #111;
+    height: 80vh;
+    width: 40%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+padding: 3vw 0;
+
+
+}
+.section-2-left p{
+    font-size: 0.9vw;
+    font-family: apple;
+
+}
+.section-2-left h5{
+    font-size: 1.3vw;
+    font-family: apple;
+    font-weight: 100;
+    width: 85%;
+    /* word-spacing: -6px; */
+}
+
+
+
+    
+.section-2-right{
+    background-color: #333;
+    height: 80vh;
+    width: 50%;
 }
 
