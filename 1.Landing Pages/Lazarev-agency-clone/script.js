@@ -87,3 +87,8 @@ sectionBottom.addEventListener('mouseenter', () => {
 sectionBottom.addEventListener('mouseleave', () => {
     sectionBottom.classList.remove('active');
 });
+
+
+
+
+
