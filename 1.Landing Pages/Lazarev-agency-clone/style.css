@@ -369,53 +369,126 @@ opacity: 1;
 
 .section-5-top{
     background-color: rgb(255, 255, 255);
-    height: 50vh;
+    height: 60vh;
     width: 100%;
-    border-top: 5px solid black;
+    border-top: 3px solid black;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
+    transition: all ease 0.1s;
+    border-radius: 10px;
+   
+
 
 }
-.text{
+.section-5-top:hover .text h2,
+.section-5-top:hover .text p{
+    color: white;
+}
+
+.section-5-top .text{
     height: 50vh;
     width: 45%;
     background-color: #ffffff;
 
 }
 
-.text h2 {
+
+.section-5-top .text h2 {
     font-family: apple;
     font-size: 2.5vw;
     color:black
 }
-.text p{
+.section-5-top .text p{
     font-family: apple;
     padding-top: 1vw;
     font-size: 1.3vw;
     color: black;
     font-weight: 6=500;
 }
-.video{
+.section-5-top .video{
     width: 45%;
     background-color: #ffffff;
     height: 50vh;
+    position: relative;
 }
-.video img{
+.section-5-top .video img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    
 
 }
-.video video{
+.section-5-top .video video{
      height: 100%;
     width: 100%;
     object-fit: cover;
-transform: scaleX(0.7) scaleY(0);
-border-radius: 30px;
+/* transform: scaleX(0.7) scaleY(.5); */
+
 position: absolute;
-opacity: 1;
-    z-index: 999;
+top: 0;
+left: 0;
+
+opacity: 0;
+
+}
+.section-5-bottom{
+    background-color: rgb(255, 255, 255);
+    height: 60vh;
+    width: 100%;
+    border-top: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+        /* background-color: #9f8585; */
+
+
+}
+.section-5-bottom.section-5-bottom .text{
+    height: 50vh;
+    width: 45%;
+    background-color: #ffffff;
+
+}
+
+.section-5-bottom .text h2 {
+    font-family: apple;
+    font-size: 2.5vw;
+    color:black
+}
+.section-5-bottom .text p{
+    font-family: apple;
+    padding-top: 1vw;
+    font-size: 1.3vw;
+    color: black;
+    font-weight: 6=500;
+}
+.section-5-bottom .video{
+    width: 45%;
+    background-color: #ffffff;
+    height: 50vh;
+    position: relative;
+}
+.section-5-bottom .video img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+
+}
+.section-5-bottom .video video{
+     height: 100%;
+    width: 100%;
+    object-fit: cover;
+/* transform: scaleX(0.7) scaleY(.5); */
+
+position: absolute;
+top: 0;
+left: 0;
+transition: opacity ease 0.3s;
+opacity: 0;
 
 }

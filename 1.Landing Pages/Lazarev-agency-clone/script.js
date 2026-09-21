@@ -1,4 +1,5 @@
-var section3center = document.querySelector('#section3-center')
+function section3video() {
+    var section3center = document.querySelector('#section3-center')
 var video = document.querySelector('#section-3 video')
 section3center.addEventListener("click",function(){
     console.log("clicked")
@@ -22,3 +23,26 @@ video.addEventListener("click",function(){
         borderRadius:0
          })
 })
+}
+
+section3video()
+
+var videos = document.querySelectorAll("#sec5vidoes")
+
+
+videos.forEach(function(elem){
+elem.addEventListener("mouseenter",function(){
+    elem.childNodes[3].style.opacity = 1
+    elem.childNodes[3].play()
+})
+})
+
+
+videos.forEach(function(elem){
+elem.addEventListener("mouseleave",function(){
+    elem.childNodes[3].style.opacity = 0
+    elem.childNodes[3].load()
+})
+})
+
+
