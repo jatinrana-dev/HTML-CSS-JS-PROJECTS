@@ -76,3 +76,14 @@ sectionTop.addEventListener('mouseenter', () => {
 sectionTop.addEventListener('mouseleave', () => {
     sectionTop.classList.remove('active');
 });
+
+
+const sectionBottom = document.querySelector('.section-5-bottom');
+
+sectionBottom.addEventListener('mouseenter', () => {
+    sectionBottom.classList.add('active');
+});
+
+sectionBottom.addEventListener('mouseleave', () => {
+    sectionBottom.classList.remove('active');
+});
